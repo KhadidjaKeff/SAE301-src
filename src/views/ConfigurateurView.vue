@@ -66,12 +66,6 @@ const createLunette = async () => {
 
 <template>
     <main>
-        <div class="introduction_description">
-            <h1>Vuetur</h1>
-            <p>
-                Découvrez les lunettes VueTur : la fusion parfaite entre esthétique, innovation et utilité. Notre dernière création optique est conçue pour les amateurs de technologie et les passionnés de style, offrant un mélange harmonieux de design raffiné et de fonctionnalités avant-gardistes.
-            </p>
-          </div>
         <div style="display: flex; align-items: center;">
             <!-- Afficher le SVG des lunettes -->
             <svg width="583" height="251" viewBox="0 0 583 251" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -148,13 +142,13 @@ const createLunette = async () => {
 </defs>
             </svg>
       
-
+      
       <!-- Options de personnalisation -->
       <div style="margin-left: 20px;">
         <div class="info-section">
-            <h2>Lunettes Vuetur</h2>
+            <h1>Lunette Classique</h1>
             <h3>TaVue</h3>
-            <button class="button_large" @click="createLunette()">
+            <button @click="createLunette()">
                 Enregistrer
             </button>
         </div>
@@ -193,7 +187,7 @@ const createLunette = async () => {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid rgb(191, 191, 191);
+    border: 1px solid black;
     cursor: pointer;
     margin: 5px;
   }
@@ -222,26 +216,15 @@ const createLunette = async () => {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    color: #ff0000;
+    color: #000;
     text-transform: uppercase;
     cursor: pointer;
 }
 .ligne {
-    background: #000000;
+    background: #C2A68B;
     width: 700px;
     height: 1px;
     flex-shrink: 0;
     margin-bottom: 10px;
-}
-.button_large{
-    padding: 10px;
-    background-color: rgb(34, 0, 255);
-    border: none;
-    border-radius: 5px;
-    font-family: outfit,bold, sans-serif, ;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
   </style>
