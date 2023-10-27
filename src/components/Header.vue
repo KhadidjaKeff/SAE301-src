@@ -8,8 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/"><button class="nav-btn">Accueil</button></RouterLink>
         <RouterLink to="/lunettes"><button class="nav-btn">Lunettes</button></RouterLink>
-        <button class="nav-btn">Personnaliser</button>
-        <button class="nav-btn">Mon espace</button>
+        <RouterLink to="/"></RouterLink><button class="nav-btn">Personnaliser</button>
       </nav>
       <button class="signup-btn">S'inscrire</button>
     </header>
@@ -17,56 +16,68 @@ import { RouterLink, RouterView } from 'vue-router'
   </template>
   
   <style scoped>
+  /* Styles généraux pour l'en-tête */
   header {
-    background-color: #ffffff;
-    height: 85px;
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px; /* Adding some padding to the left and right for better spacing */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   }
   
+  /* Logo */
   .logo {
-    margin-left: 113px;
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 54px;
-    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
   
+  /* Navigation */
   nav {
     display: flex;
-    gap: 102px;
+    gap: 10px;
   }
   
   .nav-btn {
     background: none;
     border: none;
-    color: #000;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20.4px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Cette transformation déplace légèrement le bouton vers le haut */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   
   .signup-btn {
-    margin-right: 141px;
-    background-color: #3C7DDE;
-    border: none;
-    border-radius: 4px;
-    width: 184px;
-    height: 44px;
+    background-color: blue;
     color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20.4px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-btn:hover {
+    background-color: darkblue;
+    transform: translateY(-3px); /* Cette transformation déplace légèrement le bouton vers le haut */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   </style>
