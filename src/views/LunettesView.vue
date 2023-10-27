@@ -183,12 +183,46 @@ const createLunette = async () => {
   
   
   <style scoped>
-  .info-section {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    margin-bottom: 20px;
-}
+  main {
+      font-family: 'Outfit', sans-serif;
+      padding: 20px;
+      padding-right: 200px;
+      max-width: 1200px;
+      margin: 0 auto;
+      transition: all 0.3s ease; /* Animation douce lors des changements de style */
+  }
+  
+  .introduction_description {
+      padding: 20px 0;
+      padding-right: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Afin que le texte soit aligné au h1 */
+  }
+  
+  .introduction_description h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease; /* Petite animation pour rendre le survol du titre plus dynamique */
+      
+  }
+  
+  .introduction_description p {
+      font-size: 1.2em;
+      color: #999; /* Gris comme demandé */
+      line-height: 1.6;
+      padding-right: 20px; /* Padding droit */
+      transition: color 0.3s ease; /* Animation pour le changement de couleur */
+  
+  }
+  
+  svg {
+      max-width: 100%;
+      height: auto;
+      transition: opacity 0.3s ease; /* Animation pour rendre le SVG plus ou moins transparent */
+  
+  }
   .color-button {
     width: 50px;
     height: 50px;
