@@ -1,4 +1,8 @@
 <script setup>
+
+  //Adresse IP VPS : http://193.168.146.202/
+
+
 import { ref } from 'vue';
 import PocketBase from 'pocketbase';
 var pocketbase_ip = "";

@@ -3,6 +3,8 @@
   import Header from '@/components/Header.vue'
   import Footer from '@/components/Footer.vue'
 
+  //Adresse IP VPS : http://193.168.146.202/
+
   // Import pocketbase
   import PocketBase from 'pocketbase'
     // Objet pocketBase
